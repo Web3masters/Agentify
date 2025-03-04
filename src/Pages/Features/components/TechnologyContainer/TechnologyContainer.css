@@ -1,0 +1,244 @@
+.TechnologyContainer-btn{
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid #B2A1FC;
+    background-color: transparent;
+    color: #B2A1FC;
+    margin-top: 3rem;
+}
+
+.TechnologyContainer-header-text{
+    font-size: 2.8rem;
+    padding-top: 1rem;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;  /* Applying the Inter font */
+    line-height: 46.42px;              /* Line height */
+    letter-spacing: -0.06em;           /* More negative letter-spacing */
+    text-align: center;                /* Centered text */
+}
+
+.TechnologyContainer-sub-header-text{
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;  /* Applying the Inter font */
+    line-height: 4.42px;              /* Line height */
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    color: #C9D5FF;
+    
+}
+
+.TechnologyContainer-option-textcontainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin: 0.4rem 0px;
+   
+}
+
+.TechnologyContainer-option-textcontainer p{
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.586);
+    font-family: 'Inter', sans-serif;  /* Applying the Inter font */
+
+}
+
+.TechnologyContainer-option-textcontainer-space-around{
+    justify-content: space-around !important;
+    font-family: 'Inter', sans-serif;  /* Applying the Inter font */
+
+}
+
+.TechnologyContainer-cover-text{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    font-size: 4rem;
+    font-weight: 550;
+    color: #ABBDFE;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.blur{
+    position: absolute;
+    width: 30rem;
+    height: 8rem;
+    border-radius: 30%;
+    background: rgb(178,161,252);
+    /* filter: blur(1rem); */
+    filter: blur(2rem);
+    background: radial-gradient(circle, rgba(178, 161, 252, 0.134) 34%, rgba(178, 161, 252, 0.084) 94%);
+    z-index: 1;
+    top: 4rem;
+    left: 35rem;
+    overflow: hidden;
+}
+
+.TechnologyContainer-options-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.9);  /* Increased from 0.8 */
+        width: 125% !important;
+        gap: .5rem; /* Increased width for better readability */
+    }
+}
+
+/* Add media query for mobile view */
+@media screen and (max-width: 768px) {
+    
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.8);  /* Increased from 0.8 */
+        width: 115% !important;
+        gap: 1rem; /* Increased width for better readability */
+    }
+    
+
+    .TechnologyContainer-header-text {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        padding: 0 1rem;
+    }
+
+    .TechnologyContainer-sub-header-text {
+        line-height: 1.4;
+        padding: 1rem;
+    }
+
+    .TechnologyContainer-option-textcontainer-space-around {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .TechnologyContainer-cover-text {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        padding: 0 3rem;
+    }
+
+    .blur {
+        display: none;
+    }
+    
+}
+
+/* For very small screens */
+@media screen and (max-width: 580px) {
+    .TechnologyContainer-option-textcontainer {
+        gap: 0.75rem;  /* Slightly increased gap */
+        height: 1.5rem;
+    }
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.8);  /* Increased from 0.8 */
+        width: 115% !important;
+        gap: 1rem; /* Increased width for better readability */
+    }
+
+    
+    .TechnologyContainer-option-textcontainer p {
+        font-size: 0.8rem;  /* Increased from 0.65rem */
+    }
+}
+
+/* For screens below 500px */
+@media screen and (max-width: 500px) {
+    .TechnologyContainer-option-textcontainer {
+        gap: 0.15rem !important;
+    }
+    
+    .TechnologyContainer-option-textcontainer p {
+        font-size: 0.55rem;
+        white-space: normal;  /* Allow text to wrap if needed */
+        text-align: center;
+    }
+
+    .TechnologyContainer-option-textcontainer-space-around {
+        flex-direction: row;  /* Stack items vertically */
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.85);
+        width: 120% !important;
+        gap: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.82);
+        width: 118% !important;
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.8);
+        width: 115% !important;
+        gap: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.75);
+        width: 112% !important;
+        gap: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.7);
+        width: 110% !important;
+        gap: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.65);
+        width: 108% !important;
+        gap: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.78);
+        width: 122% !important;
+        gap: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.73);
+        width: 129% !important;
+        gap: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .TechnologyContainer-option-textcontainer {
+        transform: scale(0.6);
+        width: 145% !important;
+        gap: 0.7rem;
+    }
+}

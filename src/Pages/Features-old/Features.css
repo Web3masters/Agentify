@@ -1,0 +1,102 @@
+.features-main-container{
+    min-width:  100vw;
+    min-height: 100vh;
+    background-color: #111521;
+    color: #fff;
+}
+
+.features-cover-container{
+    width:  100vw;
+    height: 100vh;
+    background-color: #131724;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features-cover-container-lines{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.features-cover-container-lines-div-hr{
+    border-top: 1px solid #aaaaaa66;
+    margin: 6rem 0px;
+}
+
+.features-cover-container-lines-vl{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.features-cover-container-lines-vl-div{
+    height: 100vh;
+    border-left: 1px solid #aaaaaa66;
+    margin: 0px 4rem;
+}
+
+
+.features-circle-design{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: rgb(178,161,252);
+    /* filter: blur(1rem); */
+    filter: blur(4rem);
+    background: radial-gradient(circle, rgba(178, 161, 252, 0.171) 34%, rgba(178, 161, 252, 0.084) 94%);
+    z-index: 1;
+    top: -6rem;
+    left: -3rem;
+    overflow: hidden;
+}
+
+.features-cover-container-content{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(#13172488, #131724d5, #131724, #131724);
+    /* padding: 2rem; */
+    /* border: 1px solid #fff; */
+}
+
+
+.features-technology-container{
+    width:  100vw;
+    min-height: 30rem;
+    background-color: #131724;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features-agentifyinfo-container{
+    width:  100vw;
+    min-height: 20rem;
+    background-color: #131724;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(178,161,252);
+    background: linear-gradient(180deg, rgba(178,161,252,0.20229341736694673) 0%, rgba(106,96,150,0.10425420168067223) 91%);
+}
+
+

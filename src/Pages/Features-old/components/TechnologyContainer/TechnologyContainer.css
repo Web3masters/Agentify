@@ -1,0 +1,46 @@
+.TechnologyContainer-btn{
+    width: 9rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #B2A1FC;
+    background-color: transparent;
+    color: #B2A1FC;
+}
+
+.TechnologyContainer-header-text{
+    font-size: 2.5rem;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.TechnologyContainer-sub-header-text{
+    font-size: 0.9rem;
+    text-align: center;
+    color: #C9D5FF;
+}
+
+.TechnologyContainer-option-textcontainer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin: 0.4rem 0px;
+}
+
+.TechnologyContainer-option-textcontainer p{
+    font-size: 0.9rem;
+}
+
+.TechnologyContainer-option-textcontainer-space-around{
+    justify-content: space-around !important;
+}
+
+.TechnologyContainer-cover-text{
+    font-size: 3.5rem;
+    font-weight: 550;
+    color: #ABBDFE;
+    text-align: center;
+}
+

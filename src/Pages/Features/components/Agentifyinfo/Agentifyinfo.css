@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+.agentifyinfo-container{
+    margin-bottom: 2rem;
+    
+    width: calc(100% - 4rem);
+    height: auto;
+    padding: 6rem;
+    padding-left: 0rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.agentifyinfo-first-header{
+    color: #ABBDFE;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.agentifyinfo-first-covertext{
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: -2.3px;
+
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+    line-height: 4.5rem;
+}
+
+.agentifyinfo-first-info{
+    letter-spacing: -0.7px;
+
+    font-size: 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.agentifyinfo-first-navigationbtn-cnt{
+    display: flex;
+}
+
+.agentifyinfo-first-navigationbtn{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+}
+
+.agentifyinfo-sec{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.agentifyinfo-sec-covertxt{
+    font-size: 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.agentifyinfo-sec-profile-cnt{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.image {
+    /* margin-left: 80px; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    /* margin-top: -50px;
+    margin-bottom: 3px; */
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.301);
+    font-size: 15px;
+    /* margin-left: 80px; */
+    font-family: 'DM Sans', sans-serif;
+    /* margin-top: -28px; */
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.agentifyinfo-sec,
+.agentifyinfo-sec-covertxt,
+.agentifyinfo-sec .image,
+.agentifyinfo-sec .description {
+    font-family: 'DM Sans', sans-serif !important;
+}
+.agentifyinfo-first {
+    margin-left: 80px;
+    width: 50%;
+}
+
+.agentifyinfo-sec {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.agentifyinfo-first p {
+    width: 100%;
+    margin: 0%;
+}
+
+.agentifyinfo-first-navigationbtn-cnt {
+  margin-top: 1rem;
+}
+
+.review {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .agentifyinfo-container {
+    flex-direction: column;
+    padding: 40px 0;
+    background-color: transparent;
+    color: white;
+    margin-left: 0;
+  }
+
+  .agentifyinfo-first {
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .agentifyinfo-sec {
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .agentifyinfo-first-header,
+  .agentifyinfo-first-covertext,
+  .agentifyinfo-first-info {
+    margin-left: 0;
+  }
+
+  .agentifyinfo-first-header {
+    color: #8F7EF3;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .agentifyinfo-first-covertext {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .agentifyinfo-first-info {
+    font-size: 16px;
+    color: #A9A6B6;
+    margin-bottom: 24px;
+    
+  }
+
+  .agentifyinfo-first-navigationbtn-cnt {
+    display: flex;
+    gap: 12px;
+  }
+
+  .agentifyinfo-first-navigationbtn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .agentifyinfo-sec-covertxt {
+    font-size: 20px;
+    line-height: 1.5;
+    /* margin-bottom: 24px; */
+    color: #FFFFFF;
+  }
+
+  .circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* margin-bottom: 16px; */
+  }
+
+  .image {
+    font-size: 18px;
+    font-weight: 500;
+    /* margin-bottom: 8px; */
+  }
+
+  .description {
+    font-size: 14px;
+    color: #A9A6B6;
+  }
+}

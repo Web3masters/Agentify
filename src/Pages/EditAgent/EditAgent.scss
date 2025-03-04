@@ -1,0 +1,212 @@
+
+
+.EditAgent {
+    font-family: "DM Sans";
+
+    button {
+        flex: 1;
+        padding: 1rem;
+        font-family: "DM Sans";
+        text-transform: none;
+
+        &.outlined {
+            border: 1.2px solid rgba(#ABBDFE, .8);
+            border-radius: .4rem;
+            color: #ABBDFE;
+        }
+
+        &.filled {
+            background: linear-gradient(
+                to bottom,
+                #ABBDFE,
+                #B2A1FC
+            );
+            color: black;
+        }
+    }
+
+    input {
+        font-family: "DM Sans";
+        color: white;
+        background-color: transparent;
+    }
+
+    h2 {
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h4 {
+        font-weight: 300;
+        margin: .25rem 0;
+        opacity: .8;
+    }
+
+    .EditAgentContent {
+        padding: 2rem;
+        display: flex;
+        gap: 4rem;
+
+        .EditAgentSection {
+            flex: 1;
+            padding: 1rem;
+
+            .abi {
+                display: flex;
+                flex-direction: column;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                    border: 1px solid rgba(white, .8) !important;
+                    border-radius: 1rem 1rem 0 0;
+                    margin-top: 1rem;
+
+                    textarea {
+                        color: white;
+                        font-family: "DM Sans";
+                        padding: 0 1.5rem;
+                    }
+                }
+
+                .uploadABIBox {
+                    padding: .7rem .9rem;
+                    border: 1px solid rgba(white, .8);
+                    border-top-color: transparent;
+                    border-radius: 0 0 1rem 1rem;
+
+                    label {
+                        font-size: .7rem;
+                        float: right;
+                        text-transform: none;
+                        color: white;
+
+                        svg {
+                            background: linear-gradient(
+                                to bottom,
+                                #ABBDFE,
+                                #B2A1FC
+                            );
+                            color: black;
+                            padding: .25rem;
+                            border-radius: .25rem;
+                        }
+                    }
+                }
+            }
+
+            .contract {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-top: 1rem;
+                    margin-bottom: .5rem;
+                    font-size: 1.1rem;;
+                }
+
+                span.info {
+                    font-size: .8rem;
+                    opacity: .8;
+                }
+
+                input {
+                    background-color: transparent;
+                    border-style: none;
+                    border: 1px solid rgba(white, .8);
+                    padding: 1.25rem 3rem;
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+        .agentPurposeSection {
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            .MuiFormControl-root {
+                width: 100%;
+                border: 1px solid rgba(white, .8) !important;
+                border-radius: 1rem;
+                margin-top: 1rem;
+
+                textarea {
+                    color: white;
+                    font-family: "DM Sans";
+                    padding: 1rem;
+                    padding-top: 0;
+                }
+            }
+
+            .buttons {
+                padding: 1rem 0;
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .editAgentControls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+
+        button {
+            max-width: max-content;
+            padding: 1rem 4rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .EditAgent {
+        .EditAgentContent {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .editAgentControls {
+            button {
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .EditAgent {
+        .EditAgentContent {
+            .EditAgentSection {
+                .abi {
+                    .MuiFormControl-root {
+                        textarea {
+                            color: white;
+                            font-family: "DM Sans";
+                            padding: 0 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #contractAddress,
+    #agentName,
+    #tags {
+        padding: 20px 1.5rem;
+    }
+
+    .EditAgent {
+        .EditAgentContent {
+            padding: 1rem;
+            .EditAgentSection {
+                padding: 0.5rem;
+            }
+        }
+    }
+}

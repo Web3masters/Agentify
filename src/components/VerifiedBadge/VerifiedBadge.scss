@@ -1,0 +1,20 @@
+
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    background: rgba(0, 176, 53, .2);
+    border: 1px solid #00B035;
+    padding: .2rem .6rem;
+    border-radius: 2rem;
+    color: #0ed149;
+    font-weight: 500;
+
+    &.red {
+        background: rgba(255, 149, 0, 0.12);
+        border: 1px solid rgba(255, 149, 0, 1);
+        color: rgba(255, 149, 0, 1);
+    }
+}

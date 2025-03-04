@@ -1,0 +1,189 @@
+.functionItem {
+    padding: 2px 0;
+}
+
+
+@mixin tableStyle {
+    width: 100%;
+        column-gap: 1rem !important;
+
+        tr {
+            td {
+                padding: .5rem 0;
+            }
+
+            .key {
+                font-weight: 600;
+                color: #ABBDFE;
+                max-width: max-content;
+                flex-grow: 0;
+            }
+            .value {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    cursor: pointer;
+                    padding: .25rem;
+                }
+            }
+        }
+}
+
+.AgentDetails {
+    font-family: "DM Sans";
+
+    input {
+        font-family: "DM Sans";
+        color: white;
+        background-color: transparent;
+    }
+
+    h1 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: .25rem 0;
+    }
+
+    .AgentDetailsContent {
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+
+        .AgentDetailsSection {
+            flex: 1;
+
+            .basicDetails {
+                padding: 1rem 0;
+                
+                table {
+                    @include tableStyle();
+                }
+            }
+
+            .availableFunctionsDetails {
+                padding: 2rem 0;
+
+                .title {
+                    font-weight: 600;
+                    color: #ABBDFE;
+                }
+
+                .functionsBox {
+                    border: 1px solid rgba(#ABBDFE, .7);
+                    border-radius: .6rem;
+                    padding: 1rem .5rem;
+                    white-space: pre-line;
+                }
+            }
+
+            .statDetails {
+                padding: 1rem 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                gap: 1rem;
+
+                .field {
+                    display: flex;
+                    gap: .25rem;
+
+                    .number {
+                        font-weight: 600;
+                        color: #ABBDFE;
+                    }
+                }
+            }
+
+
+            .buttons {
+                padding: 1rem 0;
+                display: flex;
+                gap: 1rem;
+
+                button {
+                    flex: 1;
+                    padding: 1rem;
+                    font-family: "DM Sans";
+                    text-transform: none;
+
+                    &.outlined {
+                        border: 1.2px solid rgba(#ABBDFE, .8);
+                        border-radius: .4rem;
+                        color: #ABBDFE;
+                    }
+
+                    &.filled {
+                        background: linear-gradient(
+                            to bottom,
+                            #ABBDFE,
+                            #B2A1FC
+                        );
+                        color: black;
+                    }
+                }
+            }
+    
+        }
+
+        .agentPurposeSection {
+            flex: 1;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+
+            .creationDetails {
+                padding: 1rem 0;
+
+                table {
+                   @include tableStyle();
+                }
+            }
+
+
+           
+        }
+    }}
+    
+    
+@media screen and (max-width: 1100px) {
+    .AgentDetails {
+        .AgentDetailsContent {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem !important;
+        }
+    }
+
+    table {
+        tr {
+            display: contents;
+            border: solid red
+        }
+
+        td {
+            display: block;
+            font-size: .85rem !important;
+
+            &.key {
+                padding-bottom: 0 !important;
+                font-size: 1rem !important;
+            }
+
+            &.value {
+                padding-top: .3rem !important;
+            }
+        }
+
+        tr td+td {
+            order: 1;
+        }
+    }
+}

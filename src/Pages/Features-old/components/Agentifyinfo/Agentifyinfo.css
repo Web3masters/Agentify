@@ -1,0 +1,56 @@
+.agentifyinfo-container{
+    margin: 2rem;
+    width: calc(100% - 4rem);
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.agentifyinfo-first{
+
+}
+
+.agentifyinfo-first-header{
+    color: #ABBDFE;
+}
+
+.agentifyinfo-first-covertext{
+    color: #fff;
+    font-size: 5rem;
+    padding: 0px;
+    margin: 0px;
+    line-height: 4rem;
+    /* font-weight: bold; */
+}
+
+.agentifyinfo-first-info{
+    font-size: 1.4rem;
+}
+
+.agentifyinfo-first-navigationbtn-cnt{
+    display: flex;
+}
+
+.agentifyinfo-first-navigationbtn{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.agentifyinfo-sec{
+
+}
+
+.agentifyinfo-sec-covertxt{
+    font-size: 1.4rem;
+}
+
+.agentifyinfo-sec-profile-cnt{
+    
+}

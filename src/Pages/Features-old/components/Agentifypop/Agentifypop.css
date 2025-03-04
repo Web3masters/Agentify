@@ -1,0 +1,130 @@
+.agentifypop-container{
+    position: absolute;
+    top: 30vh;
+    right: 7rem;
+    min-height: 15rem;
+    width: 13rem;
+    border-radius: 1rem;
+    border: 1px solid #D0C9C9;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #111521;
+    /* background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.017419467787114895) 0%, rgba(255,255,255,0.05103291316526615) 91%); */
+}
+
+.agentifypop-header{
+    position: relative;
+}
+
+.agentifypop-create-successfully-pop{
+    position: absolute;
+    top: -3rem;
+    left: 8rem;
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #D0C9C9;
+    border-radius: 1rem;
+    background-color: #111521;
+    /* filter: blur(4px); */
+    overflow: hidden;
+    padding: 0.5rem;
+    font-size: 10px !important;
+    z-index: 10;
+}
+
+.agentifypop-create-successfully-pop-text{
+    font-size: 0.7rem;
+}
+
+.agentify-goback-bnt{
+    background: rgb(178,161,252) !important;
+    background: linear-gradient(270deg, rgba(178,161,252,1) 0%, rgba(171,189,254,1) 91%) !important;
+    text-transform: none !important;
+    border-radius: 5px !important;
+    width: 9.5rem;
+    height: 2rem;
+    position: relative;
+    font-size: 0.8rem !important;
+    margin: 0.3rem 0px !important;
+    position: relative;
+    left: -10px;
+    top: 1.5rem;
+    color: #fff !important;
+}
+
+
+.agentifypop-lable{
+    font-size: 0.6rem;
+    padding: 0px;
+    margin: 0px;
+    color: #808080;
+}
+
+.agentifypop-drop-down-button{
+    height: 5rem !important;
+    width: 13rem !important;
+    margin: 0px;
+    padding: 0x;
+    text-transform: none !important;
+    background-color: transparent !important;
+    border: 1px solid #D0C9C9 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agentifypop-drop-down-button-mainlable{
+    font-size: 0.5rem;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0.2rem;
+}
+
+.agentifypop-drop-down-button-secondlable{
+    font-size: 0.5rem;
+    padding: 0px;
+    margin: 0px;
+    color: #808080;
+
+}
+
+.agentifypop-AgentName-input{
+    width: 12.5rem;
+    height: 2rem;
+    background-color: transparent !important;
+    border: 1px solid #D0C9C9 !important;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+.agentify-bnt{
+    background: rgb(178,161,252) !important;
+    background: linear-gradient(270deg, rgba(178,161,252,1) 0%, rgba(171,189,254,1) 91%) !important;
+    text-transform: none !important;
+    /* color: #fff !important; */
+    /* height: 2rem !important; */
+    border-radius: 5px !important;
+    width: 13rem;
+    position: relative;
+    font-size: 1rem !important;
+    margin: 0.3rem 0px !important;
+}
+
+.agentify-embed-agentbnt{
+    text-transform: none !important;
+    /* color: #fff !important; */
+    /* height: 2rem !important; */
+    border-radius: 5px !important;
+    width: 13rem;
+    position: relative;
+    font-size: 1rem !important;
+    margin: 0.3rem 0px !important;
+    background-color: transparent !important;
+    border: 1px solid #b2a1fc !important;
+}
