@@ -1,0 +1,14 @@
+ <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wallet Body -->
+  <rect x="10" y="18" width="44" height="34" rx="6" fill="#4C6EF5" stroke="#1E3A8A" stroke-width="2"/>
+  
+  <!-- Wallet Flap -->
+  <path d="M10 26C10 22.6863 12.6863 20 16 20H48C51.3137 20 54 22.6863 54 26V30H10V26Z" fill="#ABBDFE"/>
+  
+  <!-- Digital Circuit Pattern -->
+  <path d="M14 38H18V42H14V38Z M22 38H26V42H22V38Z M30 38H34V42H30V38Z M38 38H42V42H38V38Z" fill="#B2A1FC"/>
+  
+  <!-- Wallet Logo - Crypto Symbol -->
+  <circle cx="48" cy="32" r="6" fill="#1E40AF" stroke="#B2A1FC" stroke-width="2"/>
+  <path d="M46 32H50 M48 30V34" stroke="#B2A1FC" stroke-width="2" stroke-linecap="round"/>
+</svg>
