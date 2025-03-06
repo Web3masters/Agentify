@@ -1,7 +1,8 @@
 
 ## Deployments
 
-- **Aurora testnet**
+**Aurora testnet**
+
 USDT:- [0x4Cd7fDFf83DC1540696BdaF38840a93134336dF8](https://explorer.testnet.aurora.dev/address/0x4Cd7fDFf83DC1540696BdaF38840a93134336dF8)
 
 MYID:- [0xB433a6F3c690D17E78aa3dD87eC01cdc304278a9](https://explorer.testnet.aurora.dev/address/0xB433a6F3c690D17E78aa3dD87eC01cdc304278a9)
