@@ -17,7 +17,6 @@
     "@reown/appkit-adapter-wagmi": "^1.6.5",
     "@tanstack/react-query": "^5.64.2",
     "cra-template": "1.2.0",
-    "ethers": "^5.6.6",
     "fortawesome": "^0.0.1-security",
     "mui-image": "^1.0.7",
     "react": "^19.0.0",
@@ -36,7 +35,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile": "npx hardhat compile",
+    "deploy:aurora": "npx hardhat run scripts/deploy.js --network aurora_testnet",
+    "verify:aurora": "npx hardhat run scripts/verify.js --network aurora_testnet",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy_local.js --network localhost"
   },
   "eslintConfig": {
     "extends": [
@@ -58,10 +62,28 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "@openzeppelin/contracts": "^4.9.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.8.1",
+    "hardhat": "^2.15.0",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.14",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
     "typescript": "^5.7.3",
     "webpack-cli": "^6.0.1"
   }
