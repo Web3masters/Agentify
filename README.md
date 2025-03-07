@@ -11,3 +11,39 @@ ChainLink:- [0x95ee06ec2D944B891E82CEd2F1404FBB8A36dA44](https://explorer.testne
 
 Presale:- [0x99fA2C17fC269FA23ADd4E71cDE3210B1174f3B8](https://explorer.testnet.aurora.dev/address/0x99fA2C17fC269FA23ADd4E71cDE3210B1174f3B8)
 
+
+## Installation & Setup
+
+### Prerequisites
+
+- **Node.js** (v14+)
+- **npm**
+- **Ethereum Wallet** (e.g., MetaMask)
+
+### Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Web3masters/Agentify.git
+   cd Agentify
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**  
+   Create a local `.env` file and add:
+
+   ```env
+
+   OPENAI_API_KEY=your_openai_api_key
+   
+2. **Run Project:**
+
+   ```bash
+   npm run start
+   ```
