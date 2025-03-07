@@ -19,7 +19,7 @@ Presale:- [0x99fA2C17fC269FA23ADd4E71cDE3210B1174f3B8](https://explorer.testnet.
 
 - **Node.js** (v14+)
 - **npm**
-- **Ethereum Wallet** (e.g., MetaMask)
+- **Wallet** (e.g., MetaMask)
 
 ### Steps
 
