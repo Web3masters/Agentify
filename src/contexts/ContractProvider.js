@@ -24,7 +24,7 @@ export const ContractProvider = ({ children }) => {
         if (!contract) return;
         try {
             const [, , tokenBalance] = await contract.balancesOf(account);
-            const balance = ethers.utils.formatUnits(tokenBalance, 18);
+            const balance = ethers.formatUnits(tokenBalance, 18);
             setMyidBalance(Number(balance).toFixed(2));
         } catch (error) {
             console.error("Error fetching balances:", error);
@@ -32,7 +32,7 @@ export const ContractProvider = ({ children }) => {
     };
 
     const refetchBalance = async (account) => {
-        if (account) {
+        if (account && contract) {
             await getBalances(account);
         }
     };
@@ -49,7 +49,7 @@ export const ContractProvider = ({ children }) => {
                 if (!isConnected || !address) return;
                 let detectedProvider = null;
                 if (window.ethereum) {
-                    detectedProvider = new ethers.providers.Web3Provider(window.ethereum);
+                    detectedProvider = new ethers.BrowserProvider(window.ethereum);
                     await detectedProvider.send("eth_requestAccounts", []);
                 } else {
                     const walletConnectProvider = await EthereumProvider.init({
@@ -57,7 +57,7 @@ export const ContractProvider = ({ children }) => {
                         chains: [ constant.chainId ],
                         showQrModal: true,
                     });
-                    detectedProvider = new ethers.providers.Web3Provider(walletConnectProvider);
+                    detectedProvider = new ethers.BrowserProvider(walletConnectProvider);
                 }
                 const accounts = await detectedProvider.listAccounts();
                 if (!accounts.length) {
@@ -66,7 +66,7 @@ export const ContractProvider = ({ children }) => {
                 }
                 const network = await detectedProvider.getNetwork();
                 console.log("Network:", network)
-                if (network.chainId !== constant.chainId) {
+                if (Number(network.chainId) !== Number(constant.chainId)) {
                     // alert("Wrong network detected. Please switch to the correct network.");
                     return;
                 }

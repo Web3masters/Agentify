@@ -1,7 +1,7 @@
 import { createAppKit } from '@reown/appkit/react';
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { WagmiAdapter, defineNetwork } from '@reown/appkit-adapter-wagmi';
+import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
 
 const queryClient = new QueryClient();
 
@@ -15,17 +15,29 @@ const metadata = {
 };
 
 // Define Aurora Testnet
-const auroraTestnet = defineNetwork({
+const auroraTestnet = {
   id: 1313161555,
   name: 'Aurora Testnet',
-  rpcUrl: 'https://testnet.aurora.dev',
-  blockExplorerUrl: 'https://explorer.testnet.aurora.dev/',
+  rpcUrls: {
+    default: {
+      http: ['https://testnet.aurora.dev']
+    },
+    public: {
+      http: ['https://testnet.aurora.dev']
+    }
+  },
+  blockExplorers: {
+    default: {
+      name: 'Aurora Testnet Explorer',
+      url: 'https://explorer.testnet.aurora.dev/'
+    }
+  },
   nativeCurrency: {
     name: 'ETH',
     symbol: 'ETH',
     decimals: 18,
-  },
-});
+  }
+};
 
 const networks = [auroraTestnet];
 

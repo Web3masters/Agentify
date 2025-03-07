@@ -22,7 +22,7 @@ export const useGeneric = () => {
         }
         console.log("value", params);
         try {
-            // const usdtAmountBigNumber = ethers.utils.parseUnits(value, 6);
+            // const usdtAmountBigNumber = ethers.parseUnits(value, 6);
             const args = Object.values(params);
             console.log("args", args);
             if (typeof contract[functionName] !== "function") {
@@ -42,7 +42,7 @@ export const useGeneric = () => {
             //     console.log("Step2:", isGas)
             //     res = await contract[functionName](...args);
             //     console.log("RES:", res)
-            //     const tokenValue = Number(ethers.utils.formatUnits(res, 6));
+            //     const tokenValue = Number(ethers.formatUnits(res, 6));
             //     console.log("RES:", res)
             //     return { data: tokenValue, isGas: false, success: true };
             // }
@@ -58,7 +58,7 @@ export const useGeneric = () => {
         if (!contract || !provider) return;
         setProcessing(true);
         try {
-            const usdtAmountBigNumber = ethers.utils.parseUnits(usdtValue, 6);
+            const usdtAmountBigNumber = ethers.parseUnits(usdtValue, 6);
             const { usdtAddress, presaleAddress } = constant;
             const signer = provider.getSigner();
             const signerAddress = await signer.getAddress();
